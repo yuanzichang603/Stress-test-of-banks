@@ -180,4 +180,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Forward Selection with statsmodels](https://planspace.org/20150423-forward_selection_with_statsmodels/) It tries to optimize adjusted R-squared by adding features that help the most one at a time until the score goes down or you run out of features. The test optimize both adjusted R-squared and p-value.
+* [Forward Selection with statsmodels](https://planspace.org/20150423-forward_selection_with_statsmodels/) It tries to optimize adjusted R-squared by adding features that help the most one at a time until the score goes down or you run out of features. My test optimize both adjusted R-squared and p-value.
