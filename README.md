@@ -161,6 +161,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 The Stress tests of banks in my class are operated in Eviews, but I'd like examples in Python and other languages too. Please add examples in other languages!
 
+It's sutiable for those who want to run a file and get stepwise OLS output. Instead, if you enjoy step by step operating in Eviews or Stata, then the test is beyond your expectation.
 
 <!-- LICENSE -->
 <!-- ## License
