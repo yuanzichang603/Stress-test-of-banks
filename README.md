@@ -141,9 +141,9 @@ This is an example of how to list things you need to use the software and how to
             to evaluate Cointegration test 
 
 ### Tests output
-参考前面实证分析过程和结果，可得到某商业银行信用风险的压力测试模型：
+With reference to the previous empirical analysis process and results, a stress test model of a commercial bank's credit risk follows：
 
-![image](https://user-images.githubusercontent.com/60854571/121457387-2eca5e80-c9da-11eb-98cd-3e9ce08c10f9.png)
+![image](https://user-images.githubusercontent.com/60854571/121458024-35a5a100-c9db-11eb-8374-a91e923ea95d.png)
 
 
 
