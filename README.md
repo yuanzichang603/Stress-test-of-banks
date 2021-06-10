@@ -86,7 +86,9 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 Take the credit risk stress test issued by the Hebei Banking Regulatory Commission in 2015 as a demo to operate a Stress Test.
-### Data
+
+Run the Stress_testing.py file and get Stepwise OLS, ADF and Cointegration test output.
+### Demo Data
 From January 2010 to the end of December 2018, we can obtain data such as GDP, PPI index, average residential price in 100 cities, m2 growth rate, and business climate index of each quarter from January 2010 to the end of December 2018 as candidates for explanatory variables.
 
 Taking the non-performing loan rate NPL of a bank from January 2010 to the end of December 2018 as the explained variable, and introducing the intermediary variable Y, the non-performing loan rate is a non-linear transformation of the Logit function, that is, Y=ln(NPL/ (1-NPL)). It can be seen that NPL and Y change in the same direction.
@@ -103,7 +105,7 @@ data.xls in details
     -----------
     data : pandas DataFrame with all possible variables and response
 
-    response: string, name of column in data
+    response: string, name of column in data (Here is where you should rectify if response in data chagned.)
 
     Returns:
     --------
@@ -140,7 +142,7 @@ data.xls in details
     output: with P and Critial Values
             to evaluate Cointegration test 
 
-### Tests output
+### Test output
 With reference to the previous empirical analysis process and results, a stress test model of a commercial bank's credit risk follows：
 
 ![image](https://user-images.githubusercontent.com/60854571/121458024-35a5a100-c9db-11eb-8374-a91e923ea95d.png)
@@ -178,4 +180,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Forward Selection with statsmodels](https://planspace.org/20150423-forward_selection_with_statsmodels/)
+* [Forward Selection with statsmodels](https://planspace.org/20150423-forward_selection_with_statsmodels/) It tries to optimize adjusted R-squared by adding features that help the most one at a time until the score goes down or you run out of features. The test optimize both adjusted R-squared and p-value.
