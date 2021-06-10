@@ -50,7 +50,7 @@ def ADF_test(data, model):
                     ADF_output(result, i)
                 else:
                     print('For', i, ': ')
-                    print("{variable} fail the ADF test.")
+                    print("{variable} fail the ADF test.".format(variable=i))
 
 
 def Cointegration_test(model):
@@ -64,6 +64,8 @@ def Cointegration_test(model):
         print(f'   {key}, {value}')
     if result[1] <= 0.05:
         print('p-value <= 0.05: Reject the null hypothesis, resid does not have a unit root and pass the Cointegration test.')
+    else:
+        print("Resid have a unit root and fail the Cointegration test.")
 
 
 def ADF_output(result, variable):
