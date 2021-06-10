@@ -31,7 +31,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li> -->
-    <li><a href="#usage">Demo Usage</a></li>
+    <li><a href="#usage">Usage</a></li>
 <!--     <li><a href="#roadmap">Roadmap</a></li> -->
     <li><a href="#contributing">Contributing</a></li>
 <!--     <li><a href="#license">License</a></li>
@@ -85,7 +85,7 @@ This is an example of how to list things you need to use the software and how to
 
 
 <!-- USAGE EXAMPLES -->
-## Demo Usage
+## Usage
 风险因素：按外部经济环境的恶化程度评估不同压力情景下信用风险的变化情况。外部经济环境主要考虑经济增长率（GDP）、工业生产者出厂价格指数（PPI）、房地产价格、M2增长率、企业景气等因素。
 ### 数据准备
 通过万德获取2010年1月至2018年12月末每个季度的GDP、PPI指数、百城住宅平均价格、m2增长率、企业景气指数等数据作为解释变量备选。
