@@ -1,8 +1,7 @@
 # 商业银行压力测试
 宏观压力测试是指用于评定金融系统在“罕见但可能发生”的宏观经济冲击下的薄弱和脆弱点的一系列方法和技术。
 
-风险因素：按外部经济环境的恶化程度评估不同压力情景下信用风险的变化情况。外部经济环境主要考虑经济增长率（GDP）、工业生产者出厂价格指数（PPI）、房地产价格、M2增长率、企业景气等因素。
-
+一种银行风险管理和监管分析工具，用于分析假定的、极端但可能发生的不利情景对银行整体或资产组合的冲击程度，进而评估其对银行资产质量、盈利能力、资本水平和流动性的负面影响。压力测试有助于监管部门或银行对单家银行、银行集团和银行体系的脆弱性做出评估判断，并采取必要措施![image](https://user-images.githubusercontent.com/60854571/121456660-fd9d5e80-c9d8-11eb-8599-89d4d0e59db3.png)
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
