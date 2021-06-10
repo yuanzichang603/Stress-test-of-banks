@@ -85,17 +85,17 @@ This is an example of how to list things you need to use the software and how to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-风险因素：按外部经济环境的恶化程度评估不同压力情景下信用风险的变化情况。外部经济环境主要考虑经济增长率（GDP）、工业生产者出厂价格指数（PPI）、房地产价格、M2增长率、企业景气等因素。
+Take the credit risk stress test issued by the Hebei Banking Regulatory Commission in 2015 as a demo to operate Stress Test.
 ### Data
-通过万德获取2010年1月至2018年12月末每个季度的GDP、PPI指数、百城住宅平均价格、m2增长率、企业景气指数等数据作为解释变量备选。
+From January 2010 to the end of December 2018, we can obtain data such as GDP, PPI index, average residential price in 100 cities, m2 growth rate, and business climate index of each quarter from January 2010 to the end of December 2018 as candidates for explanatory variables.
 
-将某银行2010年1月至2018年12月末每个季度的不良贷款率NPL作为被解释变量，并引入中介变量Y，对不良贷款率做Logit函数的非线性转换，即Y=ln(NPL/(1-NPL))。可知NPL与Y同向变化。
+Taking the non-performing loan rate NPL of a bank from January 2010 to the end of December 2018 as the explained variable, and introducing the intermediary variable Y, the non-performing loan rate is a non-linear transformation of the Logit function, that is, Y=ln(NPL/ (1-NPL)). It can be seen that NPL and Y change in the same direction.
 
-数据详见data.xls
+data.xls in details
 
 ### Stepwise OLS with Stress_testing.py
 
-"forward_selected" 函数用法:
+"forward_selected" fucntion in file:
 
     Linear model designed by forward selection.
 
@@ -111,7 +111,7 @@ This is an example of how to list things you need to use the software and how to
            with an intercept
            selected by forward selection
            evaluated by adjusted R-squared and p_value
-"ADF_test" 函数用法:
+"ADF_test" function in file:
 
     ADF test for selected variables.
 
@@ -125,7 +125,7 @@ This is an example of how to list things you need to use the software and how to
     --------
     output: with P and Critial Values
             to evaluate ADF test 
-"Cointegration_test" 函数用法:
+"Cointegration_test" function in file:
 
     Cointegration test for resid.
 
