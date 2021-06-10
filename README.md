@@ -87,14 +87,14 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 风险因素：按外部经济环境的恶化程度评估不同压力情景下信用风险的变化情况。外部经济环境主要考虑经济增长率（GDP）、工业生产者出厂价格指数（PPI）、房地产价格、M2增长率、企业景气等因素。
-### 数据准备
+### Data
 通过万德获取2010年1月至2018年12月末每个季度的GDP、PPI指数、百城住宅平均价格、m2增长率、企业景气指数等数据作为解释变量备选。
 
 将某银行2010年1月至2018年12月末每个季度的不良贷款率NPL作为被解释变量，并引入中介变量Y，对不良贷款率做Logit函数的非线性转换，即Y=ln(NPL/(1-NPL))。可知NPL与Y同向变化。
 
 数据详见data.xls
 
-### 利用Stress_testing.py文件做逐步线性回归分析及检验
+### Stepwise OLS with Stress_testing.py
 
 "forward_selected" 函数用法:
 
@@ -141,7 +141,7 @@ This is an example of how to list things you need to use the software and how to
     output: with P and Critial Values
             to evaluate Cointegration test 
 
-### 压力测试结果
+### Tests output
 参考前面实证分析过程和结果，可得到某商业银行信用风险的压力测试模型：
 
 ![image](https://user-images.githubusercontent.com/60854571/121457387-2eca5e80-c9da-11eb-98cd-3e9ce08c10f9.png)
