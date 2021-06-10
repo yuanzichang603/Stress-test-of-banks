@@ -1,5 +1,4 @@
 # 商业银行压力测试
-A bank risk management and regulatory analysis tool used to analyze the degree of impact of assumed, extreme but possible adverse scenarios on the bank as a whole or asset portfolio, and then evaluate its impact on the bank’s asset quality, profitability, capital level and liquidity Negative impact. Stress testing helps the supervisory authority or bank make assessments and judgments on the vulnerability of individual banks, banking groups, and the banking system, and take necessary measures.
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
