@@ -30,7 +30,7 @@ def forward_selected(data, response):
 
 
 def ADF_test(data, model):
-    for i in model.params.keys()[2:]:  # i is string
+    for i in model.params.keys()[2:]:  # i is a string
         temp = data[i]
         result = adfuller(temp, maxlag=9, regression='c', autolag='AIC')
         if result[1] <= 0.05:
@@ -81,7 +81,6 @@ def ADF_output(result, variable):
 
 
 def main():
-    #
     data = pd.read_excel('data.xls')
 
     print('1.Stepwise OLS follows: ')
