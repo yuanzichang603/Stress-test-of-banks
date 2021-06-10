@@ -85,7 +85,7 @@ This is an example of how to list things you need to use the software and how to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-Take the credit risk stress test issued by the Hebei Banking Regulatory Commission in 2015 as a demo to operate Stress Test.
+Take the credit risk stress test issued by the Hebei Banking Regulatory Commission in 2015 as a demo to operate a Stress Test.
 ### Data
 From January 2010 to the end of December 2018, we can obtain data such as GDP, PPI index, average residential price in 100 cities, m2 growth rate, and business climate index of each quarter from January 2010 to the end of December 2018 as candidates for explanatory variables.
 
