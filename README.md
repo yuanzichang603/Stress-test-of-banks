@@ -90,6 +90,50 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
+For the block of "forward_selected" in Stress_testing.py file:
+
+    Linear model designed by forward selection.
+
+    Parameters:
+    -----------
+    data : pandas DataFrame with all possible variables and response
+
+    response: string, name of column in data
+
+    Returns:
+    --------
+    model: an "optimal" fitted statsmodels linear model
+           with an intercept
+           selected by forward selection
+           evaluated by adjusted R-squared and p_value
+For the block of "ADF_test" in Stress_testing.py file:
+
+    ADF test for selected variables.
+
+    Parameters:
+    -----------
+    data : pandas DataFrame with all variables
+
+    variables: string, name of column in data
+
+    Returns:
+    --------
+    output: with P and Critial Values
+            to evaluate ADF test 
+For the block of "Cointegration_test" in Stress_testing.py file:
+
+    Cointegration test for resid.
+
+    Parameters:
+    -----------
+    data : pandas arrary with resid
+
+    resid: string, name of column in model
+
+    Returns:
+    --------
+    output: with P and Critial Values
+            to evaluate Cointegration test 
 
 
 <!-- ROADMAP -->
