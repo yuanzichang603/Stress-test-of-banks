@@ -46,8 +46,10 @@ def ADF_test(data, model):
                     print("For {variable}.diff({diff}): ".format(
                         variable=i, diff=j))
                     ADF_output(result, i)
+                    # break the inner loop if the test pass
                     break
             else:
+                # will be called if the previous loop did not end with a `break`
                 print('For', i, ': ')
                 print("{variable} fail the ADF test.".format(variable=i))
 
