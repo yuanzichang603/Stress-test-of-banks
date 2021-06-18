@@ -30,53 +30,50 @@ def forward_selected(data, response):
 
 
 def ADF_test(data, model):
-    for i in model.params.keys()[2:]:  # i is a string
+    # start at [2:] to ignore intercept and y[-1] vaiable
+    for i in model.params.keys()[2:]:
         temp = data[i]
         result = adfuller(temp, maxlag=9, regression='c', autolag='AIC')
-        if result[1] <= 0.05:
+        if result[0] <= result[4]['5%']:
             print('For', i, ': ')
             ADF_output(result, i)
         else:
-            result = adfuller(temp.diff(1).dropna(), maxlag=9,
-                              regression='c', autolag='AIC')
-            if result[1] <= 0.05:
-                print("For {variable}.diff(1): ".format(variable=i))
-                ADF_output(result, i)
-            else:
-                result = adfuller(temp.diff(2).dropna(),
-                                  maxlag=9, regression='c', autolag='AIC')
-                if result[1] <= 0.05:
-                    print("For {variable}.diff(2): ".format(variable=i))
+            for j in range(1, 3):
+                temp = temp.diff(j)[j:]
+                result = adfuller(
+                    temp, maxlag=9, regression='c', autolag='AIC')
+                if result[0] <= result[4]['5%']:
+                    print("For {variable}.diff({diff}): ".format(
+                        variable=i, diff=j))
                     ADF_output(result, i)
-                else:
-                    print('For', i, ': ')
-                    print("{variable} fail the ADF test.".format(variable=i))
+                    break
+            else:
+                print('For', i, ': ')
+                print("{variable} fail the ADF test.".format(variable=i))
 
 
 def Cointegration_test(model):
     resid = model.resid
     result = adfuller(resid, maxlag=9, regression='c', autolag='AIC')
     print(f'ADF Statistic: {result[0]}')
-    #print(f'n_lags: {result[1]}')
     print(f'p-value: {result[1]}')
     for key, value in result[4].items():
         print('Critial Values:')
         print(f'   {key}, {value}')
     if result[1] <= 0.05:
-        print('p-value <= 0.05: Reject the null hypothesis, resid does not have a unit root and pass the Cointegration test.')
+        print('Reject the null hypothesis, resid does not have a unit root and pass the Cointegration test.')
     else:
         print("Resid have a unit root and fail the Cointegration test.")
 
 
 def ADF_output(result, variable):
     print(f'ADF Statistic: {result[0]}')
-    #print(f'n_lags: {result[1]}')
     print(f'p-value: {result[1]}')
     for key, value in result[4].items():
         print('Critial Values:')
         print(f'   {key}, {value}')
     print(
-        'p-value <= 0.05: Reject the null hypothesis, variable {variable} does not have a unit root and pass the ADF test.'.format(variable=variable))
+        'Reject the null hypothesis, variable {variable} does not have a unit root and pass the ADF test.'.format(variable=variable))
     print(' ')
 
 
